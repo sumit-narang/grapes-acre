@@ -1,0 +1,118 @@
+footer{
+	font-family: 'open sans',sans-serif;
+	color: white;
+	background: #69af69;
+	background-image: url();
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer > div{
+	box-sizing: border-box;
+}
+
+footer > div:nth-child(1){
+	width: 50%;
+	border-right: 1px solid white;
+}
+
+footer > div:nth-child(2){
+	width: 50%;
+}
+
+footer > div:nth-child(3){
+	width: 100%;
+}
+
+.copyright p{
+	color: white;
+	text-align: center;
+}
+
+.contact{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contact > div{
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.contact a{
+	text-decoration: none;
+	color: white;
+}
+
+.contact a:hover{
+	text-decoration: underline;
+}
+
+.links{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.links a{
+	display: block;
+	margin-top: 20px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+
+.links a:nth-child(4){
+	margin-bottom: 20px;
+}
+
+.links a:hover{
+	text-decoration: underline;
+}
+
+.copyright{
+	margin-bottom: 20px;
+}
+
+
+@media(max-width: 479px){
+	footer > div{
+		width: 100% !important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	footer > div:nth-child(1){
+		border-right: 0px;
+	}
+
+	.links:after , .contact:after{
+		content: " ";
+		display: block;
+		width: 15%;
+		height: 2px;
+		position: relative;
+		top: 20px;
+		background: white;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.contact div{
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+	.links a:nth-child(4){
+		margin-bottom: 0px;
+	}
+
+	.contact{
+		margin-top: 0px;
+	}
+}

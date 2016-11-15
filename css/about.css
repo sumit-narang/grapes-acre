@@ -1,0 +1,47 @@
+.about-content{
+	background: url(../images/aboutsmall.png) no-repeat;
+	background-color: white;
+	display: flex;
+	height: 700px;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-content h1{
+	font-size: 100px;
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	font-weight: 900;
+	text-align: center;
+}
+
+@media(max-width: 768px){
+	.about-content{
+		height: 500px;
+	}
+
+	.about-content h1{
+		font-size: 80px;
+	}
+}
+
+@media(max-width: 600px){
+	.about-content{
+		background-position: 50% 30%;
+	}
+
+	.about-content h1{
+		font-size: 70px;
+	}
+}
+
+@media(max-width: 500px){
+	.about-content{
+		height: 350px;
+		background-position:30% 30%;
+	}
+
+	.about-content h1{
+		font-size: 40px;
+	}
+}
